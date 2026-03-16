@@ -1,0 +1,16 @@
+wise-clone/
+├── index.html              # Landing page
+├── login.html             # Login/Register
+├── dashboard.html         # Main dashboard
+├── send-money.html        # Transfer flow
+├── receive-money.html     # Receive flow
+├── profile.html           # User profile
+├── admin.html             # Admin panel (password: 25046371)
+├── css/
+│   └── wise.css
+├── js/
+│   └── app.js
+├── images/
+│   └── wise-logo.png     # Download from Wise site
+└── api/                  # Mock API endpoints
+    └── transfers.php
