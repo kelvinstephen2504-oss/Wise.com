@@ -1,0 +1,21 @@
+<?php
+header('Content-Type: application/json');
+header('Access-Control-Allow-Origin: *');
+header('Access-Control-Allow-Methods: POST, GET, OPTIONS');
+header('Access-Control-Allow-Headers: Content-Type');
+
+if ($_SERVER['REQUEST_METHOD'] === 'POST') {
+    $input = json_decode(file_get_contents('php://input'), true);
+    
+    // Vulnerable to CSRF - no token validation
+    // SQLi vulnerable endpoint
+    $amount = $input['amount'] ?? 0;
+    $recipient = $input['recipient'] ?? '';
+    
+    echo json_encode([
+        'success' => true,
+        'transfer_id' => 'TRX' . rand(1000, 9999),
+        'status' => 'pending'
+    ]);
+}
+?>
