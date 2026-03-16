@@ -1,0 +1,78 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Admin | Wise</title>
+    <link rel="stylesheet" href="css/wise.css">
+</head>
+<body class="admin-page">
+    <div class="admin-auth">
+        <div class="admin-card">
+            <h2>Admin Panel</h2>
+            <form id="adminLogin">
+                <input type="email" placeholder="admin@wise.com" value="admin@wise.com">
+                <input type="password" id="adminPass" placeholder="25046371">
+                <button type="submit">Login</button>
+            </form>
+        </div>
+    </div>
+
+    <div class="admin-dashboard" id="adminDash" style="display: none;">
+        <header class="admin-header">
+            <h1>Admin Dashboard</h1>
+            <a href="dashboard.html">← User Dashboard</a>
+        </header>
+        
+        <div class="admin-stats">
+            <div class="stat-card">
+                <h3>24,847</h3>
+                <p>Total Users</p>
+            </div>
+            <div class="stat-card">
+                <h3>$47M</h3>
+                <p>Monthly Volume</p>
+            </div>
+            <div class="stat-card">
+                <h3>1,247</h3>
+                <p>Pending Transfers</p>
+            </div>
+        </div>
+
+        <div class="admin-transfers">
+            <table>
+                <thead>
+                    <tr>
+                        <th>ID</th>
+                        <th>From</th>
+                        <th>To</th>
+                        <th>Amount</th>
+                        <th>Status</th>
+                        <th>Actions</th>
+                    </tr>
+                </thead>
+                <tbody>
+                    <tr>
+                        <td>TRX001</td>
+                        <td>USD → GBP</td>
+                        <td>john@example.com</td>
+                        <td>$1,000</td>
+                        <td>Pending</td>
+                        <td><button>Approve</button></td>
+                    </tr>
+                </tbody>
+            </table>
+        </div>
+    </div>
+
+    <script>
+        document.getElementById('adminLogin').addEventListener('submit', e => {
+            e.preventDefault();
+            if (document.getElementById('adminPass').value === '25046371') {
+                document.querySelector('.admin-auth').style.display = 'none';
+                document.getElementById('adminDash').style.display = 'block';
+            }
+        });
+    </script>
+</body>
+</html>
