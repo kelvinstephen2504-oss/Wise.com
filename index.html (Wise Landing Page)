@@ -1,0 +1,53 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Money Abroad with Wise | Low fees, great rates</title>
+    <link rel="stylesheet" href="css/wise.css">
+    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Inter:wght@300;400;500;600;700&display=swap">
+</head>
+<body>
+    <header class="header">
+        <nav class="navbar">
+            <div class="nav-brand">
+                <img src="images/wise-logo.png" alt="Wise" class="logo">
+            </div>
+            <div class="nav-links">
+                <a href="#personal">Personal</a>
+                <a href="#business">Business</a>
+                <a href="#pricing">Pricing</a>
+                <a href="login.html">Log in</a>
+                <button class="nav-btn">Get started</button>
+            </div>
+        </nav>
+    </header>
+
+    <main class="hero">
+        <div class="hero-content">
+            <h1>Send money abroad with Wise</h1>
+            <p class="hero-subtitle">Join 13 million people who saved 1.9 billion GBP last year.</p>
+            <div class="transfer-form">
+                <div class="currency-select">
+                    <label>You send</label>
+                    <div class="currency-input">
+                        <span class="currency-flag">🇺🇸</span>
+                        <input type="number" placeholder="1,000" value="1000">
+                        <span class="currency-code">USD</span>
+                    </div>
+                </div>
+                <div class="arrow">→</div>
+                <div class="currency-select">
+                    <label>They receive</label>
+                    <div class="currency-input">
+                        <span class="currency-flag">🇬🇧</span>
+                        <input type="number" placeholder="790" value="790">
+                        <span class="currency-code">GBP</span>
+                    </div>
+                </div>
+                <button class="cta-primary">Get great rates</button>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
