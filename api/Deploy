@@ -1,0 +1,8 @@
+# Static hosting
+npx serve .
+
+# With PHP backend
+php -S localhost:8080
+
+# Docker (optional)
+docker run -v $(pwd):/var/www/html -p 8080:80 php:apache
