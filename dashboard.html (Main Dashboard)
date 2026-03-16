@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Dashboard | Wise</title>
+    <link rel="stylesheet" href="css/wise.css">
+</head>
+<body class="dashboard-page">
+    <header class="app-header">
+        <div class="header-left">
+            <img src="images/wise-logo.png" alt="Wise" class="logo-small">
+            <span>Dashboard</span>
+        </div>
+        <div class="header-right">
+            <div class="balance">$12,547.32 USD</div>
+            <img src="images/avatar.jpg" alt="Profile" class="avatar">
+        </div>
+    </header>
+
+    <main class="dashboard">
+        <div class="balance-card">
+            <div class="balance-info">
+                <span class="balance-label">Available balance</span>
+                <div class="balance-amount">$12,547.32</div>
+                <span class="currency">USD</span>
+            </div>
+            <button class="btn-add-money">+ Add money</button>
+        </div>
+
+        <div class="quick-actions">
+            <a href="send-money.html" class="action-card send">
+                <div class="icon">➤</div>
+                <h3>Send money</h3>
+                <p>Pay anyone abroad</p>
+            </a>
+            <a href="receive-money.html" class="action-card receive">
+                <div class="icon">⬇</div>
+                <h3>Receive money</h3>
+                <p>Get paid like a local</p>
+            </a>
+        </div>
+
+        <div class="recent-transfers">
+            <h3>Recent transfers</h3>
+            <div class="transfer-list">
+                <div class="transfer-item">
+                    <div class="transfer-from">
+                        <span class="flag">🇺🇸</span> USD
+                    </div>
+                    <div class="transfer-arrow">→</div>
+                    <div class="transfer-to">
+                        <span class="flag">🇬🇧</span> GBP
+                    </div>
+                    <div class="transfer-amount">$1,000.00</div>
+                    <span class="transfer-status completed">Completed</span>
+                </div>
+            </div>
+        </div>
+    </main>
+</body>
+</html>
