@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Send Money | Wise</title>
+    <link rel="stylesheet" href="css/wise.css">
+</head>
+<body class="transfer-page">
+    <header class="app-header">
+        <button class="back-btn">← Back</button>
+        <div class="header-title">Send money</div>
+    </header>
+
+    <main class="transfer-form">
+        <form id="transferForm">
+            <div class="currency-section">
+                <label>You send</label>
+                <div class="currency-input-group">
+                    <select class="currency-select">
+                        <option>USD</option>
+                        <option>EUR</option>
+                        <option>GBP</option>
+                    </select>
+                    <input type="number" value="1000" step="0.01">
+                </div>
+            </div>
+
+            <div class="recipients-section">
+                <label>To</label>
+                <div class="recipient-input">
+                    <input type="text" placeholder="Name" id="recipientName">
+                    <input type="email" placeholder="Email" id="recipientEmail">
+                </div>
+                <div class="account-details">
+                    <input type="text" placeholder="Account number / IBAN">
+                    <input type="text" placeholder="Routing number / Sort code">
+                </div>
+            </div>
+
+            <div class="rate-section">
+                <div class="rate-info">
+                    <span>They'll receive</span>
+                    <div class="receive-amount">$790.25 GBP</div>
+                </div>
+                <div class="fee">Fee: $4.50 (0.45%)</div>
+            </div>
+
+            <button type="submit" class="btn-confirm">Confirm & Send $1,000</button>
+        </form>
+    </main>
+
+    <script>
+        document.getElementById('transferForm').addEventListener('submit', function(e) {
+            e.preventDefault();
+            // Mock transfer submission - vulnerable to CSRF
+            alert('Transfer initiated! (Mock for pentest)');
+        });
+    </script>
+</body>
+</html>
